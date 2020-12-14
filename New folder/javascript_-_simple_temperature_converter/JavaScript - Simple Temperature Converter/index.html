@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="https://sourcecodester.com">Sourcecodester</a>
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<h3 class="text-primary">JavaScript - Simple Temperature Converter</h3>
+		<hr style="border-top:1px dotted #ccc;" />
+		<div class="col-md-6">	
+			<div class="alert alert-info">Fahrenheit to Celcius</div>
+			<div style="border:1px solid #000; padding:20px; border-radius:10px;">
+				<div class="form-group">
+					<input type="number" id="fahrenheit1" placeholder="Enter number here" class="form-control"/>
+				</div>
+				<div class="form-group">
+					<input type="text" id="celcius1" class="form-control" readonly="readonly"/>
+				</div>
+				<center><button class="btn btn-success" onclick="convertToCe();">Convert</button></center>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="alert alert-info">Celcius to Fahrenheit</div>
+			<div style="border:1px solid #000; padding:20px; border-radius:10px;">
+				<div class="form-group">
+					<input type="number" id="celcius2" placeholder="Enter number here" class="form-control"/>
+				</div>
+				<div class="form-group">
+					<input type="text" id="fahrenheit2" class="form-control" readonly="readonly"/>
+				</div>
+				<center><button class="btn btn-success" onclick="convertToFa();">Convert</button></center>
+			</div>
+		</div>
+	</div>
+<script src="js/script.js"></script>
+</body>
+</html>
